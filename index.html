@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eesha's Creative Folder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile">
+        <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+            @eeshascreativefolder
+        </h1>
+        <p>𐙚𝐸𝑒𝑠ℎ𝑎'𝑠 𝙲𝚛𝚎𝚊𝚝𝚒𝚟𝚎 𝙵𝚘𝚕𝚍𝚎𝚛 ᝰ.ᐟ</p>
+    </div>
+
+    <div class="links-container">
+        <div class="promo-card">
+            <a href="https://amora.ly/b5uqbexbkzau" target="_blank" class="promo-link-wrapper">
+                <div class="promo-header">
+                    <span class="brand-tag">Beauty Amora</span>
+                    <h2>Use my code and get up to 25% OFF Skincare 🌟</h2>
+                </div>
+                
+                <div class="discount-tiers">
+                    <div class="tier-item">
+                        <span class="percentage">25% OFF</span>
+                        <span class="tier-details">Orders over $69 AUD (New Customers)</span>
+                    </div>
+                    <div class="tier-item">
+                        <span class="percentage">17% OFF</span>
+                        <span class="tier-details">Orders over $69 AUD (Existing Customers)</span>
+                    </div>
+                    <div class="tier-item">
+                        <span class="percentage">15% OFF</span>
+                        <span class="tier-details">No minimum spend (All Customers)</span>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="code-box" onclick="copyCode(this)">
+                <span class="code-text">CRTVFLDRCREW15</span>
+                <span class="copy-hint">Tap to copy code</span>
+            </div>
+			
+			
+        </div>
+		
+		<div class="promo-card">
+            <a href="https://www.yesstyle.com/en/home.html?rco=BLVPJM&utm_term=BLVPJM&utm_medium=Rewards&utm_source=dynamic&mcg=influencer" target="_blank" class="promo-link-wrapper">
+                <div class="promo-header">
+                    <span class="brand-tag">YesStyle</span>
+                    <h2>Stack my code for extra discounts! 🛍️</h2>
+                </div>
+                
+                <div class="discount-tiers">
+                    <div class="tier-item">
+                        <span class="percentage">5% OFF</span>
+                        <span class="tier-details">First order (New Customers)</span>
+                    </div>
+                    <div class="tier-item">
+                        <span class="percentage">2% OFF</span>
+                        <span class="tier-details">On all future hauls (Returning)</span>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="code-box" onclick="copyCode(this)">
+                <span class="code-text">BLVPJM</span>
+                <span class="copy-hint">Tap to copy code</span>
+            </div>
+        </div>
+		
+    </div>
+
+    <script>
+    function copyCode(element) {
+        const code = element.querySelector('.code-text').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+            const hint = element.querySelector('.copy-hint');
+            const originalText = hint.innerText;
+            
+            hint.innerText = "Copied! ✨";
+            hint.style.color = "#4c9e70";
+            
+            setTimeout(() => {
+                hint.innerText = originalText;
+                hint.style.color = "#7b4f91";
+            }, 2000);
+        });
+    }
+    </script>
+</body>
+</html>

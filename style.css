@@ -1,0 +1,161 @@
+:root {
+    /* Soft pink to lilac gradient */
+    --bg-gradient: linear-gradient(135deg, #ffd1dc 0%, #e0b0ff 100%);
+    --text-color: #2e2538;
+    --subtext-color: #5c4d6b;
+    /* Semi-transparent white for a frosted glass effect */
+    --btn-bg: rgba(255, 255, 255, 0.45);
+    --btn-hover: rgba(255, 255, 255, 0.65);
+    --btn-border: rgba(255, 255, 255, 0.4);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile h1 {
+    font-size: 1.6rem;
+    margin: 10px 0 5px 0;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.profile p {
+    font-size: 1.05rem;
+    margin-top: 0;
+    color: var(--subtext-color);
+}
+
+.links-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Promo Card Styles */
+.promo-card {
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(157, 120, 147, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform 0.2s ease, background-color 0.25s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.promo-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.promo-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8a6d9f;
+    font-weight: 700;
+}
+
+.promo-header h2 {
+    margin: 8px 0 0 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.discount-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 12px;
+}
+
+.tier-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.percentage {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #7b4f91;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 4px 8px;
+    border-radius: 8px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.tier-details {
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+}
+
+/* Copy Code Section */
+.code-box {
+    background: rgba(46, 37, 56, 0.06);
+    border: 1px dashed rgba(46, 37, 56, 0.2);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.code-box:hover {
+    background: rgba(46, 37, 56, 0.1);
+}
+
+.code-text {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 0.5px;
+}
+
+.copy-hint {
+    font-size: 0.75rem;
+    color: #7b4f91;
+    font-weight: 600;
+}
